@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Binlist test</string>
+    <string name="lable_bank">BANK</string>
+    <string name="default_text">\?</string>
+    <string name="helper_text">Enter the first digits of a card number (BIN/IIN)</string>
+    <string name="lable_scheme">SCHEME / NETWORK</string>
+    <string name="lable_brand">BRAND</string>
+    <string name="lable_card_number">CARD NUMBER</string>
+    <string name="lable_length">LENGTH</string>
+    <string name="lable_luhn">LUHN</string>
+    <string name="lable_type">TYPE</string>
+    <string name="lable_prepaid">PREPAID</string>
+    <string name="lable_country">COUNTRY</string>
+    <string name="location">(latitude: %1$s, longitude: %2$s)</string>
+    <string name="default_location">(latitude: \?, longitude: \?)</string>
+</resources>

@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineBinInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintGuide_percent="0.5"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/numberImputBinInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        app:endIconMode="clear_text"
+        app:helperText="@string/helper_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:startIconDrawable="@drawable/ic_search">
+
+        <com.google.android.material.textfield.MaterialAutoCompleteTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:gravity="center"
+            android:maxLines="1"
+            android:imeOptions="actionDone"
+            android:completionThreshold="1"
+            android:textSize="20sp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/lableBankBinInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/lable_bank"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/progressBar2" />
+
+    <TextView
+        android:id="@+id/nameBankBinInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/default_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lableBankBinInput" />
+
+    <TextView
+        android:id="@+id/urlBankBinInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:autoLink="web"
+        android:linksClickable="true"
+        android:text="@string/default_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nameBankBinInput" />
+
+    <TextView
+        android:id="@+id/phoneBankBinInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:autoLink="phone"
+        android:linksClickable="true"
+        android:text="@string/default_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/urlBankBinInput" />
+
+    <TextView
+        android:id="@+id/lableSchemeBinInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/lable_scheme"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/phoneBankBinInput" />
+
+    <TextView
+        android:id="@+id/valueSchemeBinInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="@string/default_text"
+        app:layout_constraintStart_toStartOf="@+id/lableSchemeBinInput"
+        app:layout_constraintTop_toBottomOf="@+id/lableSchemeBinInput" />
+
+    <TextView
+        android:id="@+id/lableBrandBinInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/lable_brand"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="@+id/lableSchemeBinInput"
+        app:layout_constraintTop_toBottomOf="@+id/valueSchemeBinInput" />
+
+    <TextView
+        android:id="@+id/valueBrandBinInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/default_text"
+        android:layout_marginTop="4dp"
+        app:layout_constraintStart_toStartOf="@+id/lableSchemeBinInput"
+        app:layout_constraintTop_toBottomOf="@+id/lableBrandBinInput" />
+
+    <TextView
+        android:id="@+id/lableCardNumBinInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/lable_card_number"
+        app:layout_constraintStart_toStartOf="@+id/lableSchemeBinInput"
+        app:layout_constraintTop_toBottomOf="@+id/valueBrandBinInput" />
+
+    <TextView
+        android:id="@+id/lableLengthBinInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/lable_length"
+        android:layout_marginTop="4dp"
+        app:layout_constraintStart_toStartOf="@+id/lableSchemeBinInput"
+        app:layout_constraintTop_toBottomOf="@+id/lableCardNumBinInput" />
+
+    <TextView
+        android:id="@+id/lableLuhnBinInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/lable_luhn"
+        app:layout_constraintStart_toEndOf="@+id/lableCardNumBinInput"
+        app:layout_constraintTop_toTopOf="@+id/lableLengthBinInput" />
+
+    <TextView
+        android:id="@+id/valueLengthBinInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/default_text"
+        android:layout_marginTop="4dp"
+        app:layout_constraintStart_toStartOf="@+id/lableLengthBinInput"
+        app:layout_constraintTop_toBottomOf="@+id/lableLengthBinInput" />
+
+    <TextView
+        android:id="@+id/valueLuhnBinInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="YES / NO"
+        android:layout_marginTop="4dp"
+        app:layout_constraintStart_toEndOf="@+id/lableCardNumBinInput"
+        app:layout_constraintTop_toBottomOf="@+id/lableLuhnBinInput" />
+
+    <TextView
+        android:id="@+id/lableTypeBinInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/lable_type"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintStart_toStartOf="@+id/guidelineBinInput"
+        app:layout_constraintTop_toBottomOf="@+id/phoneBankBinInput" />
+
+    <TextView
+        android:id="@+id/valueTypeBinInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Debit / Credit"
+        android:layout_marginTop="4dp"
+        app:layout_constraintStart_toStartOf="@+id/lableTypeBinInput"
+        app:layout_constraintTop_toBottomOf="@+id/lableTypeBinInput" />
+
+    <TextView
+        android:id="@+id/lablePrepaidBinInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/lable_prepaid"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="@+id/lableTypeBinInput"
+        app:layout_constraintTop_toBottomOf="@+id/valueTypeBinInput" />
+
+    <TextView
+        android:id="@+id/valuePrepaidBinInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="YES / NO"
+        android:layout_marginTop="4dp"
+        app:layout_constraintStart_toStartOf="@+id/lableTypeBinInput"
+        app:layout_constraintTop_toBottomOf="@+id/lablePrepaidBinInput" />
+
+    <TextView
+        android:id="@+id/lableCountryBinInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/lable_country"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="@+id/lableTypeBinInput"
+        app:layout_constraintTop_toBottomOf="@+id/valuePrepaidBinInput" />
+
+    <TextView
+        android:id="@+id/emojiCountryBinInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/default_text"
+        android:layout_marginTop="4dp"
+        app:layout_constraintStart_toStartOf="@+id/lableTypeBinInput"
+        app:layout_constraintTop_toBottomOf="@+id/lableCountryBinInput" />
+
+    <TextView
+        android:id="@+id/nameCountryBinInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/default_text"
+        android:layout_marginStart="2dp"
+        app:layout_constraintStart_toEndOf="@+id/emojiCountryBinInput"
+        app:layout_constraintTop_toTopOf="@+id/emojiCountryBinInput" />
+
+    <TextView
+        android:id="@+id/locationBinInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/default_location"
+        app:layout_constraintStart_toStartOf="@+id/lableTypeBinInput"
+        app:layout_constraintTop_toBottomOf="@+id/nameCountryBinInput" />
+
+    <ProgressBar
+        android:id="@+id/progressBar2"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+
+        app:layout_constraintEnd_toEndOf="@+id/numberImputBinInput"
+        app:layout_constraintStart_toStartOf="@+id/numberImputBinInput"
+        app:layout_constraintTop_toBottomOf="@+id/numberImputBinInput" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
